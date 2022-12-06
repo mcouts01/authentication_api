@@ -1,0 +1,20 @@
+spring:
+  config:
+    activate:
+      on-profile: dev, test, prod
+  datasource:
+    url: jdbc:postgresql://ec2-54-86-214-124.compute-1.amazonaws.com:5432/d4kg29aribo2f4
+    username: jkzijkeuqmvmfc
+    password: cb8b0c0116916041c79f38b763344ff321c681ce0de97a397c9c0336b37b33c9
+    driver-class-name: org.postgresql.Driver
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-1sbfgqaflladxea5.us.auth0.com/
+
+---
+
+auth0:
+  audience: https://auth-application.com/api

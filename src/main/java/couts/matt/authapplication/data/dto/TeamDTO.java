@@ -1,0 +1,14 @@
+package couts.matt.authapplication.data.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class TeamDTO {
+    private String teamName;
+    private String teamColor;
+    private String teamIcon;
+}
